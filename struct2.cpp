@@ -1,27 +1,37 @@
 #include <iostream>
 using namespace std;
 
-struct mahasiswa
+struct alamatDetail
+{
+    string desa;
+    string kota;
+
+};
+
+struct mahasiswa 
 {
     string nama;
-    string alamat;
+    alamatDetail alamat;
     int umur;
 };
 
-int main()
+int main ()
 {
     //Deklarasi variabel struct
     mahasiswa mhs;
     //Mengisi data
     cout << "Isikan data nama : ";
     cin >> mhs.nama;
-    cout << "Isikan data alamt : ";
-    cin >> mhs.alamat;
+    cout << "Isikan data kota : ";
+    cin >> mhs.alamat.kota;
+    cout << "Isikan data kota : ";
+    cin >> mhs.alamat.desa;
     cout << "Isikan data umur : ";
     cin >> mhs.umur;
 
     cout << "Data Mahasiswa" << endl;
     cout << "Nama : " << mhs.nama << endl;
-    cout << "Alamat : " << mhs.alamat << endl;
+    cout << "Kota : " << mhs.alamat.kota << endl;
+    cout << "Desa : " << mhs.alamat.desa << endl;
     cout << "Umur : " << mhs.umur << endl;
 }
