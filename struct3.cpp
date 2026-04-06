@@ -16,3 +16,19 @@ struct mahasiswa
     int umur;
 };
 
+int main ()
+{
+    //Deklarasi variabel struct
+    mahasiswa mhs;
+    //Mengisi data
+    cout << "Isikan data nama : ";
+    getline (cin, mhs.nama);
+    cout << "Isikan data kota : ";
+    getline (cin, mhs.alamat.kota);
+    cout << "Isikan data desa : ";
+    getline (cin, mhs.alamat.desa);
+    cout << "Isikan data umur : ";
+    cin >> mhs.umur;
+
+    
+}
