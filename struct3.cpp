@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct alamatDetail
+{
+    string desa;
+    string kota;
+
+};
+
+struct mahasiswa 
+{
+    string nama;
+    alamatDetail alamat;
+    int umur;
+};
+
+int main ()
+{
+    //Deklarasi variabel struct
+    mahasiswa mhs;
+    //Mengisi data
+    cout << "Isikan data nama : ";
+    getline (cin, mhs.nama);
+    cout << "Isikan data kota : ";
+    getline (cin, mhs.alamat.kota);
+    cout << "Isikan data desa : ";
+    getline (cin, mhs.alamat.desa);
+    cout << "Isikan data umur : ";
+    cin >> mhs.umur;
+
+    
+}
